@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: Nexa-bold;
-    src: url("/public/font/Nexa-Bold.woff2")format("woff2");
+    src: url("/font/Nexa-Bold.woff2")format("woff2");
 }
 
 :root {
@@ -28,6 +28,13 @@
 
 *{
     font-family: "Nexa-bold", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+img {
+    width: 100%;
+    display: inline-block;
 }
 p {
     font-family: 'Open Sans', sans-serif;

@@ -1,0 +1,85 @@
+---
+import '../style.css'
+---
+
+
+<footer>
+    <div class="row">
+        <div class="column">
+            <ul class="links">
+                <a href="#">Om CA</a>
+                <a href="#">Kontakt</a>
+                <a href="#">Nyheder</a>
+                <a href="#">Nyhedsbrev</a>
+            </ul>
+        </div>
+        <div class="column">
+            <ul class="links">
+                <a href="#">Studiepartner</a>
+                <a href="#">Instant Feedback</a>
+                <a href="#">Løntjek</a>
+            </ul>
+        </div>
+        <div class="column">
+            <ul class="links">
+                <a href="#">Persondatapolitik</a>
+                <a href="#">Cookiepolitik</a>
+                <a href="#">Tilgængelighedserklæring</a>
+            </ul>
+        </div>
+        <div class="column">
+            <ul class="links">
+                <a href="#">Telefon hverdage 08:30-15:00</a>
+                <a href="#"><span id="telefonnummer">3314 9045</span></a>
+                <a href="#">Send en besked</a>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+</footer>
+
+<style>
+    @media (min-width:768px) {
+        footer {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .row {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        .column {
+            height: 200px;
+        }
+        .links {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }   
+    #telefonnummer {
+        font-size: 3rem;
+    }
+    .links a {
+        text-decoration: none;
+        color: var(--dark-brown);
+        transition: color 200ms ease;
+        font-size: 1.125rem;
+    } 
+    .links a:hover {
+        color: var(--main-blue);
+    }
+       
+</style>
