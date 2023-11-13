@@ -3,19 +3,24 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import '../style.css';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Cover from '../components/Cover.astro';
 ---
 
 <Layout title="CA">
-	<main>
+	
+		<Header/>
+			<main>
+				<Cover/>
+			</main>
 		<Footer/>
-	</main>
+
 </Layout>
 
 <style>
 	@media  (min-width: 768px) {
-		main {
-			max-width: 1600px;
-			margin: 0 auto;
+		body {
+			overflow-x: hidden;
 		}
 	}
 </style>
