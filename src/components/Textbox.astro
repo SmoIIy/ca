@@ -1,0 +1,13 @@
+---
+import '../style.css';
+
+const {title, href} = Astro.props;
+---
+
+<article class="textbox">
+    <h3>{title}</h3>
+        <slot/>
+    <a href={href}>Læs om fordele <span>&rarr;</span></a>
+</article>
+
+<style>
