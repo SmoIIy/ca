@@ -6,6 +6,11 @@
     src: url("/font/Nexa-Bold.woff2")format("woff2");
 }
 
+@font-face {
+    font-family: Nexa-Light;
+    src: url("font/Nexa-ExtraLight.ttf")format("ttf");
+}
+
 :root {
 
     /* Main farver */

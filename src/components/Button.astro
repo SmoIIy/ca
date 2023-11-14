@@ -1,0 +1,44 @@
+---
+import '../style.css'
+import 'animate.css'
+
+const { variant,href } = Astro.props;
+---
+
+<a href={href} class={variant}>
+    <slot />
+</a>
+
+<style>
+    a {
+        text-align: center;
+        display: inline-block;
+        border: 2px solid var(--main-blue);
+        padding: 0.6rem 3rem;
+        border-radius: 0.5rem;
+        transition: all 250ms ease;
+        text-decoration: none;
+        color: white;
+        font-size: 1.313rem;
+        font-family: 'Nexa-Light', sans-serif;
+    }
+    a:hover {
+        animation: pulse;
+        animation-duration: 0.25s;
+
+    }
+    .filled {
+        background-color: var(--main-blue);
+    }
+    .filled:hover {
+        background-color: transparent;
+        border-color: white;
+
+    }
+    .inverse {
+        background-color: transparent;
+    }
+    .inverse:hover {
+        background-color: var(--main-blue);
+    }
+</style>
