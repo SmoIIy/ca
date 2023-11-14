@@ -6,8 +6,15 @@ const {title, href} = Astro.props;
 
 <article class="textbox">
     <h3>{title}</h3>
+       <p>
         <slot/>
+        </p> 
+        <br>
     <a href={href}>Læs om fordele <span>&rarr;</span></a>
 </article>
 
 <style>
+    .textbox {
+        width: 350px;
+    }
+</style>
