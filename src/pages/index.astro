@@ -22,20 +22,26 @@ import Textbox from'../components/Textbox.astro';
 							CA prioriterer dit arbejdsliv og karriere, sikrer tryg udvikling med opdateret viden om erhvervstendenser og kurser, der gør dig attraktiv på arbejdsmarkedet.
 						</Textbox>
 						<Textbox title="Fordele" href="#">
-							CA prioriterer dit arbejdsliv og karriere, sikrer tryg udvikling med opdateret viden om erhvervstendenser og kurser, der gør dig attraktiv på arbejdsmarkedet.
-						</Textbox>
+							CA, din pålidelige karrierepartner, støtter i job, overgange og studier med sparring og rådgivning, der guider dig mod karrieredrømmenes realisering.						</Textbox>
 						<Textbox title="Fordele" href="#">
-							CA prioriterer dit arbejdsliv og karriere, sikrer tryg udvikling med opdateret viden om erhvervstendenser og kurser, der gør dig attraktiv på arbejdsmarkedet.
-						</Textbox>
+							Få ikke kun rådgivning, men også afgørende viden for din fremgang. CA hjælper med at navigere gennem job, overgange og uddannelse, så du kan forfølge karrieredrømmene med tillid.						</Textbox>
 					</div>
 				</section>
 				<section class="text-section">
 					<div class="text-row">
-						CA som Studiepartner
+						<h2>CA som Studiepartner</h2>
 					</div>
 					<div class="text-row">
-						<article class="textbox"></article>
-						<article class="textbox"></article>
+						<article class="textbox">
+							<b>CA er din studiepartner</b>
+							<br>
+							<p>Når du læser på en videregående uddannelse, kan du blive studiemedlem i CA Karrierepartner og a-kasse. Vi hjælper dig til et godt studieliv, så du er klar til et godt arbejdsliv efter uddannelsen.</p>
+						</article>
+						<article class="textbox">
+							<b>Bliv gratis studiemedlem</b>
+							<br>
+							<p>Som gratis studiemedlem i CA får du en aktiv studiepartner, deltager i lokale events og modtager rådgivning om studietrivsel og eksamensperiode. CA, med over 10.000 studiemedlemmer, er en af Danmarks største organisationer for studerende. Vi er ikke kun for samfundsvidenskabelige eller business-orienterede uddannelser; det afgørende er din vilje til udvikling i studie- og arbejdslivet.</p>
+						</article>
 					</div>
 				</section>
 
@@ -62,5 +68,24 @@ import Textbox from'../components/Textbox.astro';
 			gap: 30px;
 			margin: 25px 0;
 		}
+	}
+	@media  (max-width: 768px) {
+		.text-section {
+			padding: 15px;
+			margin: 15px auto;
+		}
+		.text-row {
+			margin: 20px 0;
+		}
+		.textbox {
+			margin: 20px 0;
+		}
+	}
+	.textbox {
+		max-width: 375px;
+		
+	}
+	b {
+		font-size: 1.2rem;
 	}
 </style>
